@@ -28,6 +28,11 @@ public class ListDemo {
         System.out.println("b = " + b);
         boolean b2 = list.containsAll(sonList);
         System.out.println("b2 = " + b2);
+
+
+
+
+
 //        Iterator iterator = list.iterator();
 //        while (iterator.hasNext()) {
 //            System.out.println("元素" + iterator.next());

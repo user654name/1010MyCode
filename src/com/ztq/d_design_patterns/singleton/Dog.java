@@ -4,6 +4,8 @@ public class Dog {
 
     //【私有的】构造方法
     private Dog() {
+        System.out.println("正在执行-Dog.Dog");
+        System.out.println("我构造了Dog");
     }
 
     //【私有的】【静态的】能得到Dog的内部类
@@ -15,15 +17,17 @@ public class Dog {
 
     //就是通过这个【公共的】【静态】【方法】获取Dog
     public static final Dog getInstance() {
-        System.out.println("即将返回狗");
+        System.out.println("正在执行-Dog.getInstance");
+        System.out.println("即将返回这条指定生成的Dog");
         return DogHolder.INSTANCE;
     }
 
     //公共的方法 外界可调用！
     public void wang() {
+        System.out.println("正在执行-Dog.wang");
         System.out.println("WANG!");
     }
-//所以这个类只开放了一个getInstance()给外界用来获取Dog对象常量
+    //所以这个类只开放了一个getInstance()给外界用来获取Dog对象常量
 
 
 }
@@ -37,6 +41,7 @@ class MainDog {
         Dog dog = Dog.getInstance();
         //执行他的公共方法
         dog.wang();
+
     }
 }
 

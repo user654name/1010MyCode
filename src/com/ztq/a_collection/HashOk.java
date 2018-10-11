@@ -1,4 +1,4 @@
-package com.ztq.a_hash;
+package com.ztq.a_collection;
 
 import java.util.HashMap;
 import java.util.Hashtable;

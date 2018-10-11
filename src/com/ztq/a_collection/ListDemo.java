@@ -1,4 +1,4 @@
-package com.ztq.a_hash;
+package com.ztq.a_collection;
 
 import java.util.ArrayList;
 import java.util.List;

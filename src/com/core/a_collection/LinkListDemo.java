@@ -13,12 +13,20 @@ public class LinkListDemo {
         linkedList.add("王五");
 
 
-        Iterator iterator = linkedList.iterator();
-        System.out.println(iterator);
+//        Iterator iterator = linkedList.iterator();
+//        System.out.println(iterator);
 
-        String first = (String) iterator.next();
-        System.out.println("first = " + first);
+//        String first = (String) iterator.next();
+//        System.out.println("first = " + first);
+
+        //不熟悉的构造方法
+        List list = new LinkedList(linkedList);
 
 
+        LinkedList linkedList1 = new LinkedList();
+
+        for (Object o : list) {
+            System.out.println("o = " + o);
+        }
     }
 }

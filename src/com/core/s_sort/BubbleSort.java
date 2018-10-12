@@ -8,13 +8,6 @@ import java.util.Arrays;
 public class BubbleSort {
 
 
-    public static void main(String[] args) {
-        int[] nums = new int[]{3, 7, 1, 6, 5, 4, 8,0,4};
-
-        bubbleSort(nums);
-
-        System.out.println(Arrays.toString(nums));
-    }
 
 
     //冒泡排序

@@ -21,10 +21,9 @@ public class TestSort {
     public void testSelect() {
         int[] nums = new int[]{3, 7, 1, 6, 5, 4, 8, 0, 4};
 
-        SelectSort.selectSort(nums);
+        SelectionSort.selectionSort(nums);
 
         System.out.println(Arrays.toString(nums));
+
     }
-
-
 }

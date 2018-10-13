@@ -17,8 +17,8 @@ public class Dog {
 
     //就是通过这个【公共的】【静态】【方法】获取Dog
     public static final Dog getInstance() {
-        System.out.println("正在执行-Dog.getInstance");
-        System.out.println("即将返回这条指定生成的Dog");
+//        System.out.println("正在执行-Dog.getInstance");
+//        System.out.println("即将返回这条指定生成的Dog");
         return DogHolder.INSTANCE;
     }
 

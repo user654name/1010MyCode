@@ -1,0 +1,31 @@
+写一下两个队列实现一个栈
+
+2018年10月14日 19:32:34
+
+//准备2个队列
+Queue queueA = new LinkedList();
+Queue queueB = new LinkedList();
+
+//模拟入栈
+push(Object item){
+//队列A入队
+}
+
+Object pop(){
+
+if(A AND B ARE BOTH EMPTY){
+//不能出队
+}else{
+while(queueA.size()==1)｛
+出队→出栈
+}
+//AB互换
+
+}
+
+}
+
+
+
+
+

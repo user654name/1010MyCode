@@ -1,4 +1,4 @@
-package com.core.d_data_structure;
+package com.core.d_data_structure.stack_and_queue;
 
 public interface MyQueue {
     /**

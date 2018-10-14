@@ -4,15 +4,18 @@ import java.util.Stack;
 
 public class MyStackToQueue implements MyQueue {
 
+    //准备好两个栈
     Stack stackA = new Stack();
     Stack stackB = new Stack();
 
 
+    //入队
     @Override
     public void in(Object object) {
         stackA.push(object);
     }
 
+    //出队
     @Override
     public Object out() {
         Object ret = null;

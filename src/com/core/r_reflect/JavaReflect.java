@@ -3,6 +3,7 @@ package com.core.r_reflect;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
+import java.util.Objects;
 
 public class JavaReflect {
 
@@ -26,8 +27,11 @@ public class JavaReflect {
          */
 
         Class<Cat> catClass = Cat.class;
-        Field[] fields = catClass.getFields();
-
+        Field[] fields = catClass.getDeclaredFields();
+        for (Field field : fields) {
+            String name = field.getName();
+            System.out.println("name = " + name);
+        }
     }
 
 
@@ -63,8 +67,35 @@ public class JavaReflect {
     @Test
     public void testHashCode(){
 
+        String string1=new String("123123123");
+        String string2 = "123123123";
 
+        //true 他们指向堆上的东西 相同
+        System.out.println(string1.equals(string2));
 
+        //false 变量的值不相等
+        System.out.println(string1 == string2);
+
+        String string3=new String("123123123");
+
+        System.out.println(string3 == string1);
+
+        System.out.println("123123123" == string2);
+
+        System.out.print(new String("123")==string3);
+        System.out.println(string1.hashCode());
+        System.out.println(string2.hashCode());
+//
+//
+//        try {
+//            Class.forName("");
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//
+//        System.out.println(string1 == string2);
+//        System.out.println(string1.equals(string2));
+//        System.out.println(Objects.hashCode(null));
 
     }
     public static void main(String[] args) {

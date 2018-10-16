@@ -1,13 +1,12 @@
 package com.core.z_demos.time;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
-import java.io.FileOutputStream;
-import java.sql.Time;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-
 public class TimeDemo {
+
+    public void test(){
+
+
+
+    }
 
     public static void main(String[] args) {
 //        int timeRun = 29 * 60 + 35;

@@ -1,5 +1,6 @@
 package com.core.s_sort;
 
+import com.core.s_sort.mypractice.WriteSingleton;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -25,5 +26,13 @@ public class TestSort {
 
         System.out.println(Arrays.toString(nums));
 
+    }
+
+    @Test
+    public void demo99(){
+
+        WriteSingleton writeSingleton = WriteSingleton.getInstance();
+
+        System.out.println(writeSingleton);
     }
 }

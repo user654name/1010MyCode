@@ -1,6 +1,4 @@
-package com.core.s_sort;
-
-import java.util.Arrays;
+package com.core.s_sort.selection;
 
 public class SelectionSort {
 

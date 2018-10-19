@@ -1,4 +1,4 @@
-package com.core.s_sort;
+package com.core.s_sort.bubble;
 
 import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import org.junit.Test;

@@ -1,6 +1,8 @@
 package com.core.s_sort;
 
+import com.core.s_sort.bubble.BubbleSort;
 import com.core.s_sort.mypractice.WriteSingleton;
+import com.core.s_sort.selection.SelectionSort;
 import org.junit.Test;
 
 import java.util.Arrays;

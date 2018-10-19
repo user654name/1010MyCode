@@ -1,4 +1,4 @@
-package com.core.s_sort;
+package com.core.s_sort.bubble;
 
 import org.junit.Test;
 

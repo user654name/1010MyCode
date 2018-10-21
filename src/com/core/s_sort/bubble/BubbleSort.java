@@ -1,11 +1,9 @@
 package com.core.s_sort.bubble;
 
-import org.junit.Test;
-
 import java.util.Arrays;
 
 
-public class BubbleSort {
+public class BubbleSort{
 
 
     //冒泡排序

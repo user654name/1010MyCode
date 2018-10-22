@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class QuickSort implements ArraySort {
 
     @Test
-    public void maisadasn() throws Exception {
+    public void doQSort() throws Exception {
         int[] nums = {13, 4, 123, 5, 12, 175, 3123, 51, 12351, 34};
         int[] sort = sort(nums);
         System.out.println(Arrays.toString(sort));

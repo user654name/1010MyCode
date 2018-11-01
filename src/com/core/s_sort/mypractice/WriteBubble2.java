@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-public class WriteBubble {
+public class WriteBubble2 {
 
     @Test
     public void testSort() {
@@ -24,21 +24,19 @@ public class WriteBubble {
 
     public void sort(Integer[] nums) {
 
-        //第i次比较，使得倒数第i位有序
+        //第i次 将倒数第i个位置元素排序
         for (int i = 1; i < nums.length; i++) {
 
-            //从位置j开始，比较至未排序列的末尾
-            for (int j = 0; j < nums.length - i; j++) {
-                if (nums[j] > nums[j+1])
-                    swap(nums, j, j+1);
-            }
 
+            for (int j = 0; j < nums.length - i; j++) {
+
+
+            }
 
         }
 
+
     }
-
-
 
 
 }

@@ -30,7 +30,7 @@ public class WriteBubble2 {
 
             for (int j = 0; j < nums.length - i; j++) {
 
-
+        //2018年11月3日 16:25:38
             }
 
         }

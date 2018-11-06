@@ -30,6 +30,7 @@ public class WriteBubble2 {
 
             for (int j = 0; j < nums.length - i; j++) {
 
+                System.out.println(i);
         //2018年11月3日 16:25:38
               //安静2018年11月4日 22:53:31
                 //2018年11月6日 22:04:55 测试

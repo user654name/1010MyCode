@@ -1,4 +1,4 @@
-package com.shiro.a_md5;
+package com.md5.a_md5;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -1,4 +1,4 @@
-package com.core.i_io_file_stream.file;
+package com.core.iostream.file;
 
 /*
         File的构造方法：

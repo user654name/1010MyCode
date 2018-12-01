@@ -1,4 +1,4 @@
-package com.core.i_io_file_stream.readtxt;
+package com.core.iostream.readtxt;
 
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
@@ -58,7 +58,7 @@ public class TxtPrinter {
      */
     private static void SetPrintToTxt() throws FileNotFoundException {
         //设置打印流指向的文件
-        PrintStream ps = new PrintStream("d:/loooooooog.txt");
+        PrintStream ps = new PrintStream("d:/loog.txt");
         //设置输出到打印流 而不是控制台
         System.setOut(ps);
     }

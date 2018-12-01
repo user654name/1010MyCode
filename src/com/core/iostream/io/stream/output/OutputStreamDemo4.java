@@ -1,4 +1,4 @@
-package com.core.i_io_file_stream.io.stream.output;
+package com.core.iostream.io.stream.output;
 
 /*
         加入异常处理的IO流操作

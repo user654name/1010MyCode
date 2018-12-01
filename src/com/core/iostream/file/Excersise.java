@@ -1,4 +1,4 @@
-package com.core.i_io_file_stream.file;
+package com.core.iostream.file;
 
 /*
     1.判断目录下是否有以后缀名为.jpg结尾的文件，如果有就输出此文件的文件名

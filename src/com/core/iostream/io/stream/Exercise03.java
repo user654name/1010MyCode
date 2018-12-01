@@ -1,21 +1,27 @@
-package com.core.i_io_file_stream.io.stream;
+package com.core.iostream.io.stream;
+
+/*
+
+    把e:\\**.jpg内容复制到当前项目目录下的mn.jpg中
+
+ */
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class Exercise04 {
+public class Exercise03 {
 
     public static void main(String[] args) {
 
         try {
 
             //先创建，文件输入流对象，指向要复制的源文件
-            FileInputStream fis = new FileInputStream("e:\\myshoe.mp4");
+            FileInputStream fis = new FileInputStream("e:\\mm01.jpg");
 
             //创建，文件输出流对象，指向要复制的目标文件
-            FileOutputStream fos = new FileOutputStream("copy.mp4");
+            FileOutputStream fos = new FileOutputStream("mn.jpg");
 
             //一遍从源文件里读内容，一遍将读取到的源文件的内容，写到目标文件中
             byte[] buffer = new byte[1024];
@@ -34,8 +40,6 @@ public class Exercise04 {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
 
     }
 }

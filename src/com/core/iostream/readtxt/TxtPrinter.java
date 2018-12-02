@@ -28,13 +28,16 @@ public class TxtPrinter {
          *
          * 设置打印到TXT文件
          */
-        SetPrintToTxt();
+//        SetPrintToTxt();
 
 
-        int lastNumber = 99;
+        int lastNumber = 10000;
 //        lastNumber
+        long start = System.currentTimeMillis();
         System.out.print(SPACE);
         for (int num = 0; num <= lastNumber; num++) {
+
+            SetPrintToTxt("txtFile" + num);
 
             // 每行10个元素 (每10个换行)
             if (num % ROW == 0 && num != 0) {
@@ -47,6 +50,9 @@ public class TxtPrinter {
             System.out.print(SPACE + num);
 
         }
+        long end = System.currentTimeMillis();
+
+        System.out.println("执行时间= " + (end-start)/1000.0+"秒");
     }
 
 
@@ -56,9 +62,9 @@ public class TxtPrinter {
      * 设置打印到TXT文件
      *
      */
-    private static void SetPrintToTxt() throws FileNotFoundException {
+    private static void SetPrintToTxt(String fileName) throws FileNotFoundException {
         //设置打印流指向的文件
-        PrintStream ps = new PrintStream("d:/loog.txt");
+        PrintStream ps = new PrintStream("d:/aaa/" + fileName + ".txt");
         //设置输出到打印流 而不是控制台
         System.setOut(ps);
     }

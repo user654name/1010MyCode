@@ -7,6 +7,7 @@ import java.util.Arrays;
 
 public class MyBubble {
 
+    //看到冒泡好陌生啊2018年12月4日 16:10:17
     @Test
     public void testSort() {
 
@@ -33,6 +34,7 @@ public class MyBubble {
                     nums[j + 1] = temp;
 
                 }
+
 
 
             }

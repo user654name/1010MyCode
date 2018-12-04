@@ -21,6 +21,10 @@ public class TxtPrinter {
     final static int ROW = 10;
 
 
+    /**
+     * 2018年12月2日 23:58:32
+     * 用以下代码写入文件时，文件目录必须存在 否则报错
+     */
     public static void main(String[] args) throws FileNotFoundException {
 
         /**
@@ -52,7 +56,7 @@ public class TxtPrinter {
         }
         long end = System.currentTimeMillis();
 
-        System.out.println("执行时间= " + (end-start)/1000.0+"秒");
+        System.out.println("执行时间= " + (end - start) / 1000.0 + "秒");
     }
 
 

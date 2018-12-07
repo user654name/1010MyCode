@@ -1,4 +1,4 @@
-package com.core.s_string;
+package com.core.string;
 
 public class StringSplitDemo {
 

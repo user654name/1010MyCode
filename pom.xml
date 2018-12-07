@@ -67,6 +67,16 @@
             <scope>provided</scope>
         </dependency>
 
+
+
+
+        <!--2018年12月5日 17:16:06 尝试使用LDAP库 -->
+        <dependency>
+            <groupId>org.springframework.ldap</groupId>
+            <artifactId>spring-ldap-core</artifactId>
+            <version>2.3.2.RELEASE</version>
+        </dependency>
+
     </dependencies>
 
     <build>

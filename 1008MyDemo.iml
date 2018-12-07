@@ -35,8 +35,13 @@
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-crypto-hash:1.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-lang:1.4.0" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-crypto-core:1.4.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.ldap:spring-ldap-core:2.3.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:5.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.1.2.RELEASE" level="project" />
   </component>
 </module>

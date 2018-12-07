@@ -1,6 +1,5 @@
-package com.core.s_string;
+package com.core.string;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import org.junit.Test;
 
 public class NewStringDemo {

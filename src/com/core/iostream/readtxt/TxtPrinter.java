@@ -32,8 +32,9 @@ public class TxtPrinter {
          *
          * 设置打印到TXT文件
          */
-//        SetPrintToTxt();
+//        SetPrintT oTxt();
 
+        System.out.println("TxtPrinter.main");
 
         int lastNumber = 10000;
 //        lastNumber

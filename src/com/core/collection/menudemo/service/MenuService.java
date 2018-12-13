@@ -1,5 +1,6 @@
 package com.core.collection.menudemo.service;
 
+import com.core.collection.menudemo.database.Mapper;
 import com.core.collection.menudemo.model.Menu;
 import com.core.collection.menudemo.prod.ProdUtils;
 import org.junit.Test;
@@ -40,7 +41,6 @@ public class MenuService {
     }
 
     private void dealMenu(Menu menu, Map<Long, Menu> topMap, Map<Long, Long> relationMap) {
-
 
         if (menu.getParentId()==null){
 

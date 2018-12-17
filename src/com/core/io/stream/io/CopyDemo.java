@@ -1,4 +1,4 @@
-package com.core.iostream.io;
+package com.core.io.stream.io;
 
 import java.io.File;
 import java.io.FileInputStream;

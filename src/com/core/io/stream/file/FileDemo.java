@@ -1,4 +1,4 @@
-package com.core.iostream.file;
+package com.core.io.stream.file;
 
 import java.io.File;
 import java.io.IOException;

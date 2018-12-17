@@ -1,4 +1,4 @@
-package com.core.iostream.readtxt;
+package com.core.io.stream.readtxt;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -1,4 +1,4 @@
-package com.core.iostream.io.stream.input;
+package com.core.io.stream.io.stream.input;
 
 /*
            InputStream: 此抽象类是表示字节输入流的所有类的超类。

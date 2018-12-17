@@ -1,4 +1,4 @@
-package com.core.iostream.io.stream.buffered;
+package com.core.io.stream.io.stream.buffered;
 
 /*
         BufferedOutputStream和BufferedInputStream

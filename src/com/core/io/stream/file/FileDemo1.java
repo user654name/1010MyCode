@@ -1,4 +1,4 @@
-package com.core.iostream.file;
+package com.core.io.stream.file;
 
 /*
      在操作系统上，所有的数据，只有一种存在形式，

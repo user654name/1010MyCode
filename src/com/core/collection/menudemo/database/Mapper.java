@@ -39,8 +39,8 @@ public class Mapper {
         return mysql.get(menuId);
     }
 
-    private static void putIntoMap(Map<Long, Menu> menuMapWaitToDeal, Menu m1) {
-        menuMapWaitToDeal.put(m1.getMenuId(),m1);
+    private static void putIntoMap(Map<Long, Menu> menuMapWaitToDeal, Menu m) {
+        menuMapWaitToDeal.put(m.getMenuId(),m);
     }
 
 }

@@ -1,4 +1,4 @@
-package com.core.iostream.io.stream.output;
+package com.core.io.stream.io.stream.output;
 
 /*
 

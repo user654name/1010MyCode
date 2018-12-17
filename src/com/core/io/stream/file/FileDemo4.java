@@ -1,4 +1,4 @@
-package com.core.iostream.file;
+package com.core.io.stream.file;
 
 /*
         基本获取功能：

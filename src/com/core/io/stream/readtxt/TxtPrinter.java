@@ -1,4 +1,4 @@
-package com.core.iostream.readtxt;
+package com.core.io.stream.readtxt;
 
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 

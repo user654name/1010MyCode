@@ -77,6 +77,22 @@
             <version>2.3.2.RELEASE</version>
         </dependency>
 
+        <!-- 引入Swagger调试接口 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+        <!-- swagger-ui -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+
+
+
+
     </dependencies>
 
     <build>

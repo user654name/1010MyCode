@@ -1,4 +1,4 @@
-package com.core.s_sort.bubble;
+package com.core.sort.tradition.bubble;
 
 import java.util.Arrays;
 
@@ -23,6 +23,7 @@ public class BubbleSort{
                 if (numbers[j] < numbers[j - 1]) {
                     swap(numbers, j, j - 1);
                     flag = true;
+
                     System.out.println(Arrays.toString(numbers));
                 }
             }

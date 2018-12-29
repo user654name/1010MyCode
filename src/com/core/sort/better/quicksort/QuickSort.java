@@ -1,6 +1,6 @@
-package com.core.s_sort.quicksort;
+package com.core.sort.better.quicksort;
 
-import com.core.s_sort.ArraySort;
+import com.core.sort.ArraySort;
 import org.junit.Test;
 
 import java.util.Arrays;

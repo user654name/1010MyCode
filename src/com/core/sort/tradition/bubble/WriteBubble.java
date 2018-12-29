@@ -1,4 +1,4 @@
-package com.core.s_sort.mypractice;
+package com.core.sort.tradition.bubble;
 
 import org.junit.Test;
 

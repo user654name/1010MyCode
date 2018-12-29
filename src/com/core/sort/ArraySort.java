@@ -1,4 +1,4 @@
-package com.core.s_sort;
+package com.core.sort;
 
 public interface ArraySort {
 

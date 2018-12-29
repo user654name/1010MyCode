@@ -1,4 +1,4 @@
-package com.core.s_sort.selection;
+package com.core.sort.tradition.selection;
 
 public class SelectionSort {
 

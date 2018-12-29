@@ -1,0 +1,52 @@
+ public static <T> void myExportPDF(HttpServletResponse response, String[] headers, List<T> lists, String filePath) {
+        Document document = new Document(PageSize.A2,50,50,50,50);
+        PdfWriter pw = null;
+        try {
+            pw = PdfWriter.getInstance(document, new FileOutputStream(filePath));
+            document.open();
+            //中文字体显示，直接用下载的字体jar包也可以
+            BaseFont baseFont = BaseFont.createFont("STSongStd-Light", "UniGB-UCS2-H",false);
+            Font font = new Font(baseFont,10, Font.NORMAL);
+
+            Paragraph p = new Paragraph("test", font);
+            document.add(p);
+
+            PdfPTable table = new PdfPTable(headers.length);
+            table.setSpacingBefore(25);
+            table.setSpacingAfter(25);
+            //创建表头
+            for (int i = 0; i < headers.length; i++) {
+                PdfPCell cell = new PdfPCell(new Paragraph(headers[i], font));
+                table.addCell(cell);
+            }
+
+            // 遍历集合数据，产生数据行
+            Iterator<T> it = lists.iterator();
+            int index = 0;
+            while (it.hasNext()) {
+                index++;
+                T t = (T) it.next();
+                // 利用反射，根据javabean属性的先后顺序，动态调用getXxx()方法得到属性值
+                Field[] fields = t.getClass().getDeclaredFields(
+
+
+
+
+
+ table.setSpacingAfter(25);
+            //创建表头
+            for (int i = 0; i < headers.length; i++) {
+                PdfPCell cell = new PdfPCell(new Paragraph(headers[i], font));
+                table.addCell(cell);
+            }
+
+            // 遍历集合数据，产生数据行
+            Iterator<T> it = lists.iterator();
+            int index = 0;
+            while (it.hasNext()) {
+                index++;
+                T t = (T) it.next();
+                // 利用反射，根据javabean属性的先后顺序，动态调用getXxx()方法得到属性值
+                Field[] fields = t.getClass().getDeclaredFields(
+
+

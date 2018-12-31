@@ -17,7 +17,7 @@ public class MySelection {
 
     public static void main(String[] args) {
         int[] array = SortUtil.generateArray();
-        System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(array)+"新年快乐");
         selectionSort(array);
         System.out.println(Arrays.toString(array));
     }

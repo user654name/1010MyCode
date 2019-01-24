@@ -28,6 +28,8 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="Python 3.6 interpreter library" level="application" />
+    <orderEntry type="library" name="groovy-2.5.5" level="application" />
+    <orderEntry type="library" name="Maven: com.sun:ldapbp:1.0" level="project" />
     <orderEntry type="library" name="Maven: com.itextpdf:itextpdf:5.5.13" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi:3.14" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.11" level="project" />

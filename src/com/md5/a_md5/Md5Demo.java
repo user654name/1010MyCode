@@ -9,7 +9,7 @@ public class Md5Demo {
     public static void main(String[] args) {
 
 
-        String md5 = getMD5(getMD5("666888"));
+        String md5 = getMD5(getMD5("1666888"));
 
         System.out.println("md5=" + md5);
 

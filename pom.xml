@@ -83,6 +83,12 @@
         </dependency>
 
 
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
 
 
         <!--2018年12月5日 17:16:06 尝试使用LDAP库 -->

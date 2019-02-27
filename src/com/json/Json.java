@@ -1,5 +1,10 @@
 package com.json;
 
+import com.alibaba.fastjson.JSON;
+
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author Tianqi.Zhang
  * @date 2018/11/29
@@ -20,5 +25,13 @@ public class Json {
         String address = info.getString("address");
         System.out.println(province + city + district + address);
     */
+        Map mainMap = new HashMap();
+        Map map = new HashMap();
+        map.put("LIMIT", 1);
+        map.put("START", 0);
+        mainMap.put("PAGE_COND", map);
+
+        Object o = JSON.toJSON(mainMap);
+        System.out.println(o);
     }
 }

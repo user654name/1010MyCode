@@ -12,6 +12,6 @@ public class Hello {
     public static void main(String[] args) {
         System.out.println("hello 12333" +
                 "21312331217");
-        System.out.println("切换到分支b1");
+        System.out.println("切换到1分支b1");
     }
 }

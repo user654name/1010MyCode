@@ -1,4 +1,4 @@
-package com.core.z_demos.time;
+package com.core.demos.time;
 
 public class TimeDemo {
 

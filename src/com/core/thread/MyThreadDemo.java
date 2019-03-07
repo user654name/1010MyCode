@@ -1,4 +1,4 @@
-package com.core.t_thread;
+package com.core.thread;
 
 public class MyThreadDemo {
 

@@ -1,7 +1,11 @@
 package com.core.base_api;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.stream.IntStream;
 
 /**
  * @author Tianqi.Zhang
@@ -32,6 +36,17 @@ public class ForLoop {
 
         }
 
+
+
+    }
+
+    @Test
+    public void randomNumber(){
+        Random random = new Random();
+        int[] ints = random.ints(200, 0, 30).toArray();
+        for (int anInt : ints) {
+            System.out.print(" | " + anInt);
+        }
 
 
     }

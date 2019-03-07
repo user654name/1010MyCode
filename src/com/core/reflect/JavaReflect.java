@@ -1,9 +1,8 @@
-package com.core.r_reflect;
+package com.core.reflect;
 
 import org.junit.Test;
 
 import java.lang.reflect.Field;
-import java.util.Objects;
 
 public class JavaReflect {
 
@@ -40,7 +39,7 @@ public class JavaReflect {
         /**
          * 第三种Class直接Forname
          */
-        Class<?> aClass = Class.forName("com.core.r_reflect.Cat");
+        Class<?> aClass = Class.forName("com.core.reflect.Cat");
 
     }
 

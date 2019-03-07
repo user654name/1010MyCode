@@ -1,4 +1,4 @@
-package com.core.r_reflect;
+package com.core.reflect;
 
 public class UserBean {
 

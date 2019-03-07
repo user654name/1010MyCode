@@ -1,4 +1,4 @@
-package com.core.z_demos;
+package com.core.demos;
 
 import java.util.HashSet;
 import java.util.LinkedList;

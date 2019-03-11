@@ -1,7 +1,10 @@
 package com.json;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import sun.net.www.http.HttpClient;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +17,7 @@ import java.util.Map;
  * @description
  */
 public class Json {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
     /*    JSONObject dataJson = new JSONObject("你的Json数据“);
                 JSONObject response = dataJson.getJSONObject("response");
         JSONArray data = response.getJSONArray("data");
@@ -25,13 +28,14 @@ public class Json {
         String address = info.getString("address");
         System.out.println(province + city + district + address);
     */
-        Map mainMap = new HashMap();
+        Map mainMap = new HashMap(2);
         Map map = new HashMap();
         map.put("LIMIT", 1);
         map.put("START", 0);
         mainMap.put("PAGE_COND", map);
 
         Object o = JSON.toJSON(mainMap);
-        System.out.println(o);
+
+       
     }
 }

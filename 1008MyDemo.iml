@@ -75,8 +75,6 @@
     <orderEntry type="library" name="Maven: org.flowable:flowable-engine-common-api:6.4.1" level="project" />
     <orderEntry type="library" name="Maven: org.flowable:flowable-engine-common:6.4.1" level="project" />
     <orderEntry type="library" name="Maven: org.flowable:flowable-variable-service-api:6.4.1" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.7" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.7" level="project" />
     <orderEntry type="library" name="Maven: org.flowable:flowable-variable-service:6.4.1" level="project" />
     <orderEntry type="library" name="Maven: org.flowable:flowable-identitylink-service:6.4.1" level="project" />
     <orderEntry type="library" name="Maven: org.flowable:flowable-identitylink-service-api:6.4.1" level="project" />
@@ -109,5 +107,11 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.21" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: org.gitlab:java-gitlab-api:4.1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.7" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.7" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.10" level="project" />
   </component>
 </module>

@@ -137,6 +137,21 @@
             <version>1.7.21</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.gitlab/java-gitlab-api -->
+        <dependency>
+            <groupId>org.gitlab</groupId>
+            <artifactId>java-gitlab-api</artifactId>
+            <version>4.1.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

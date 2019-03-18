@@ -13,8 +13,6 @@ import org.gitlab.api.http.GitlabHTTPRequestor;
  */
 public class GitlabApiDemo {
 
-
     public static void main(String[] args) {
-        GitlabHTTPRequestor ghr = new GitlabHTTPRequestor();
     }
 }

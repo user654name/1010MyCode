@@ -87,9 +87,7 @@ public class HolidayRequest {
         taskService.complete(task.getId(), variables);
 
 
-
-
-
+        IdentityService identityService = processEngine.getIdentityService();
 
     }
 

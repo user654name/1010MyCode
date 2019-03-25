@@ -127,6 +127,12 @@ public class FlowOpts {
         }
 
 
+
+
+
+
+
+
         for (Object key : hisMap.keySet()) {
             HistoricActivityInstance instance = (HistoricActivityInstance) hisMap.get(key);
             System.out.println(key + "[遍历历史记录]taskId=" + instance.getTaskId() + ",actId=" + instance.getActivityId() + instance.getDeleteReason());
@@ -158,6 +164,7 @@ public class FlowOpts {
                     // 若有删除记录则出栈
                     hisStack.pop();
                 }
+
 
             }
         }

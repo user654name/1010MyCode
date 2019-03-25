@@ -1,0 +1,18 @@
+2019年3月24日 20:58:10
+taskDefinitionKey = G
+Sun Mar 24 20:56:17 CST 2019[遍历历史记录]taskId=2506,actId=Anull
+Sun Mar 24 20:56:45 CST 2019[遍历历史记录]taskId=5003,actId=Bnull
+Sun Mar 24 20:56:45 CST 2019[遍历历史记录]taskId=5007,actId=Cnull
+Sun Mar 24 20:56:46 CST 2019[遍历历史记录]taskId=5011,actId=Dnull
+Sun Mar 24 20:56:46 CST 2019[遍历历史记录]taskId=5015,actId=Enull
+Sun Mar 24 20:56:46 CST 2019[遍历历史记录]taskId=5019,actId=Fnull
+Sun Mar 24 20:56:46 CST 2019[遍历历史记录]taskId=5023,actId=Gnull
+[当前栈]taskId=2506,actId=Anull
+[当前栈]taskId=5003,actId=Bnull
+[当前栈]taskId=5007,actId=Cnull
+[当前栈]taskId=5011,actId=Dnull
+[当前栈]taskId=5015,actId=Enull
+[当前栈]taskId=5019,actId=Fnull
+[当前栈]taskId=5023,actId=Gnull
+
+

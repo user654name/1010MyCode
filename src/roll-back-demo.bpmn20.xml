@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:flowable="http://flowable.org/bpmn"
+             typeLanguage="http://www.w3.org/2001/XMLSchema"
+             expressionLanguage="http://www.w3.org/1999/XPath"
+             targetNamespace="http://www.flowable.org/processdef">
+
+    <process id="roll-demo" name="Roll Back Demo" isExecutable="true">
+
+        <startEvent id="Start"/>
+
+        <userTask id="A" name="name-A" flowable:assignee="zhang">
+            <documentation>
+                流程A
+            </documentation>
+        </userTask>
+        <userTask id="B" name="name-B" flowable:assignee="zhang">
+            <documentation>
+                流程B
+            </documentation>
+        </userTask>
+        <userTask id="C" name="name-C" flowable:assignee="zhang">
+            <documentation>
+                流程C
+            </documentation>
+        </userTask>
+        <userTask id="D" name="name-D" flowable:assignee="zhang">
+            <documentation>
+                流程D
+            </documentation>
+        </userTask>
+        <userTask id="E" name="name-E" flowable:assignee="zhang">
+            <documentation>
+                流程E
+            </documentation>
+        </userTask>
+        <userTask id="F" name="name-F" flowable:assignee="zhang">
+            <documentation>
+                流程F
+            </documentation>
+        </userTask>
+        <userTask id="G" name="name-G" flowable:assignee="zhang">
+            <documentation>
+                流程G
+            </documentation>
+        </userTask>
+
+
+        <sequenceFlow sourceRef="Start" targetRef="A"/>
+        <sequenceFlow sourceRef="A" targetRef="B"/>
+        <sequenceFlow sourceRef="B" targetRef="C"/>
+        <sequenceFlow sourceRef="C" targetRef="D"/>
+        <sequenceFlow sourceRef="D" targetRef="E"/>
+        <sequenceFlow sourceRef="E" targetRef="F"/>
+        <sequenceFlow sourceRef="F" targetRef="G"/>
+        <sequenceFlow sourceRef="G" targetRef="End"/>
+
+        <endEvent id="End"/>
+
+
+    </process>
+
+</definitions>

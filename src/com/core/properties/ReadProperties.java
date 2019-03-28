@@ -17,15 +17,18 @@ public class ReadProperties {
 
         Properties properties = new Properties();
         // 使用InPutStream流读取properties文件
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("D:\\Users\\Administrator\\1008MyDemo\\src\\com\\core\\properties\\p.properties"));
+        BufferedReader bufferedReader = new BufferedReader(
+                new FileReader
+                        ("D:\\Users\\Administrator\\1008MyDemo\\src\\com\\core\\properties\\p.properties"));
         properties.load(bufferedReader);
         // 获取key对应的value值
-        String username = properties.getProperty("username");
-        System.out.println("username = " + username);
+        String username = properties.getProperty("username[1]");
+        System.out.println("username[1] = " + username);
         String password = properties.getProperty("password");
         System.out.println("password = " + password);
         int num = Integer.parseInt(properties.getProperty("num"));
         System.out.println("num = " + num);
+
 
     }
 

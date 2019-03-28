@@ -5,6 +5,7 @@ import org.flowable.engine.*;
 import org.flowable.engine.history.HistoricActivityInstance;
 import org.flowable.engine.impl.cfg.StandaloneProcessEngineConfiguration;
 import org.flowable.engine.runtime.ProcessInstance;
+import org.flowable.engine.task.Comment;
 import org.flowable.task.api.Task;
 import org.junit.Test;
 
@@ -22,9 +23,9 @@ public class FlowOpts {
 
 
     static String PROCESS_ID = "roll-demo";
-    static String PROCESS_INSTANCE_ID = "2501";
+    static String PROCESS_INSTANCE_ID = "35001";
     static String TASK_ASSIGNEE = "zhang";
-
+//    任务null已开启,流程实例ID :35001
 
     @Test
     public void startTask() {
@@ -40,11 +41,29 @@ public class FlowOpts {
 
 
     @Test
+    public void cTask() {
+
+        TaskService taskService = getEngine().getTaskService();
+        HashMap<String, Object> pMap = new HashMap<>();
+        HashMap<String, Object> tMap = new HashMap<>();
+        pMap.put("流程变量", "流程变量-不消失");
+        tMap.put("任务变量", "任务变量-一次提交");
+        String taskId = 40003 + "";
+        taskService.complete(taskId, pMap, tMap);
+        System.out.println(taskId + "已经提交");
+        //  task = Task[id=40003, name=name-C]
+//        task = Task[id=42503, name=name-D]
+    }
+
+    @Test
     public void showTaskById() {
         TaskService taskService = getEngine().getTaskService();
-        List<Task> tasks = taskService.createTaskQuery().taskAssignee(TASK_ASSIGNEE).list();
+        List<Task> tasks = taskService.createTaskQuery().processInstanceId(PROCESS_INSTANCE_ID).list();
         for (Task task : tasks) {
             System.out.println("task = " + task);
+            System.out.println(task.getProcessVariables());
+            System.out.println(task.getTaskLocalVariables());
+            System.out.println(taskService.getVariables(task.getId()));
         }
     }
 
@@ -71,7 +90,7 @@ public class FlowOpts {
         TaskService taskService = getEngine().getTaskService();
 
         // 完成几次任务？
-        loop(taskService, 6);
+        loop(taskService, 1);
 
 
         List<Task> tasks = taskService.createTaskQuery()
@@ -207,6 +226,7 @@ public class FlowOpts {
             List<Task> tasks = taskService.createTaskQuery()
                     .processInstanceId(PROCESS_INSTANCE_ID).list();
             for (Task task : tasks) {
+
                 taskService.complete(task.getId());
                 System.out.println("任务 : " + task + "已完成 ! ");
             }

@@ -1,5 +1,6 @@
 package com.core.scan;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
 /**

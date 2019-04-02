@@ -1,8 +1,11 @@
 package com.core.properties;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Enumeration;
 import java.util.Properties;
-import java.util.Random;
 
 /**
  * @author Tianqi.Zhang
@@ -14,22 +17,23 @@ import java.util.Random;
  */
 public class ReadProperties {
     public static void main(String[] args) throws IOException {
-
         Properties properties = new Properties();
         // 使用InPutStream流读取properties文件
-        BufferedReader bufferedReader = new BufferedReader(
-                new FileReader
-                        ("D:\\Users\\Administrator\\1008MyDemo\\src\\com\\core\\properties\\p.properties"));
+        File file = new File("D:\\Users\\Administrator\\1008MyDemo\\src\\com\\core\\properties\\p.properties");
+        System.out.println(file.exists());
+        String path = file.getPath();
+
+        FileReader fileReader = new FileReader(file);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
         properties.load(bufferedReader);
-        // 获取key对应的value值
-        String username = properties.getProperty("username[1]");
-        System.out.println("username[1] = " + username);
-        String password = properties.getProperty("password");
-        System.out.println("password = " + password);
-        int num = Integer.parseInt(properties.getProperty("num"));
-        System.out.println("num = " + num);
 
-
+        Enumeration<?> enumeration = properties.propertyNames();
+        System.out.println(enumeration);
+        while (enumeration.hasMoreElements()) {
+            Object o = enumeration.nextElement();
+            System.out.println("o = " + o);
+            System.out.println(properties.getProperty(o.toString()));
+        }
     }
 
 }

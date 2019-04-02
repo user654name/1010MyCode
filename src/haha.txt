@@ -4,3 +4,8 @@ aaaaabbbbbbb == 02
 aaaaabbbbbbb == 03
 aaaaabbbbbbb == 04
 aaaaabbbbbbb == 05
+
+Continue the project of Pkm , rebuild the code after learn dessign pattern
+Finish the project of restaurant to learn Web Ajax and mobile html form
+Finish project of Account
+

@@ -16,7 +16,7 @@ public class MyScanner {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("请输入数字");
+            System.out.println("请输 入数字");
             String next = scanner.next();
 
             int num = 0;

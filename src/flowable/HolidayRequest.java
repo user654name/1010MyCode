@@ -17,10 +17,13 @@ public class HolidayRequest {
     public static void main(String[] args) {
         // 连接
         ProcessEngineConfiguration cfg = new StandaloneProcessEngineConfiguration()
-                .setJdbcUrl("jdbc:mysql://127.0.0.1:3306/flowable?serverTimezone=GMT")
+                .setJdbcUrl("jdbc:mysql://129.204.42.164:3306/flowable")
+//                .setJdbcUrl("jdbc:mysql://127.0.0.1:3306/flowable?serverTimezone=GMT")
+//                .setJdbcPassword("666888")
+                .setJdbcDriver("com.mysql.jdbc.Driver")
                 .setJdbcUsername("root")
-                .setJdbcPassword("666888")
-                .setJdbcDriver("com.mysql.cj.jdbc.Driver")
+                .setJdbcPassword("zhangtianqi666888")
+//                .setJdbcDriver("com.mysql.cj.jdbc.Driver")
                 .setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_TRUE);
 
         // 引擎

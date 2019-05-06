@@ -1,14 +1,14 @@
-package com.pkm;
+package com.core.date.time;
 
 /**
  * @author Tianqi.Zhang
- * @date 2019/4/30
- * @time 14:08
- * @package com.pkm
+ * @date 2019/5/6
+ * @time 14:10
+ * @package com.core.date.time
  * @project 1008MyDemo
  * @description
  */
-public class Pkm {
+public class TimeZoneDemo {
     public static void main(String[] args) {
 
     }

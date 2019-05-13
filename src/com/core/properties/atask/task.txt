@@ -1,0 +1,24 @@
+需要实现——
+用配置文件存储对象
+    对象字段：
+        alias       string
+        name        string
+        type        int
+        location    int
+        isTiaoJian  int
+        info        Map
+        order       init
+利用两个配置文件存储
+文件一存储：
+        alias       string
+        name        string
+        type        int
+        location    int
+        isTiaoJian  int
+        info        int(读另一个文件)
+        order       init
+文件二存储：
+        info1       string
+        info2       string
+        ...         ...
+        infon       string

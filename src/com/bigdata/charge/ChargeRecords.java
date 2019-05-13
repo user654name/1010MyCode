@@ -1,8 +1,7 @@
 package com.bigdata.charge;
 
 import java.text.ParseException;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author Tianqi.Zhang
@@ -20,10 +19,23 @@ public class ChargeRecords {
         buildDatabase();
         setGapForData();
 
+        Map<String, Integer> map = new HashMap<>();
         for (Charge charge : dataBase) {
+            Calendar instance = Calendar.getInstance();
+            instance.setTime(charge.getDate());
+            int month = instance.get(Calendar.MONTH) + 1;
+            int year = instance.get(Calendar.YEAR);
+            String dateKey = year + "-" + month;
+
+            if (map.containsKey(dateKey)) {
+                map.put(dateKey, map.get(dateKey) + 1);
+            } else {
+                map.put(dateKey, 1);
+            }
             System.out.println("charge = " + charge);
         }
 
+        System.out.println("map = " + map);
 
     }
 

@@ -17,7 +17,7 @@
 
         <!-- 我们希望第一个任务是将 管理员组 和 第二个用户任务 分配给假期的原始请求者。
         为此，请将candidateGroups属性添加到第一个任务 flowable:candidateGroups="managers" -->
-        <userTask id="approveTask" name="Approve or reject request"
+        <userTask id="approveTask" name="Approve or reject request" 
                   flowable:candidateGroups="managers"/>
         <sequenceFlow sourceRef="approveTask" targetRef="decision"/>
 

@@ -26,6 +26,14 @@
 
     <dependencies>
 
+
+        <!--2019年5月29日 09:38:01试试缓存-->
+        <!-- https://mvnrepository.com/artifact/net.sf.ehcache/ehcache -->
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <version>2.10.4</version>
+        </dependency>
         <!--2019年5月24日 09:31:35 引入拼音包-->
         <!-- https://mvnrepository.com/artifact/com.belerweb/pinyin4j -->
         <dependency>

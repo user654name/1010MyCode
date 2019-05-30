@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+         updateCheck="false">
+    <diskStore path="java.io.tmpdir/Tmp_EhCache"/>
+    <defaultCache
+            eternal="false"
+            maxElementsInMemory="1000"
+            overflowToDisk="false"
+            diskPersistent="false"
+            timeToIdleSeconds="0"
+            timeToLiveSeconds="600"
+            memoryStoreEvictionPolicy="LRU"/>
+
+    <cache name="autoTransmission"
+           eternal="false"
+           maxElementsInMemory="1000"
+           overflowToDisk="false"
+           diskPersistent="false"
+           timeToIdleSeconds="0"
+           timeToLiveSeconds="36000"
+           memoryStoreEvictionPolicy="LRU">
+    </cache>
+    <cache name="123"
+           eternal="false"
+           maxElementsInMemory="1000"
+           overflowToDisk="false"
+           diskPersistent="false"
+           timeToIdleSeconds="0"
+           timeToLiveSeconds="36000"
+           memoryStoreEvictionPolicy="LRU">
+        <searchable values="false" >
+            <searchAttribute name="color" type="java.lang.String"/>
+            <searchAttribute name="name" type="java.lang.String"/>
+        </searchable>
+    </cache>
+    　　<!-- 其中：name是方法名 ，timeToLiveSeconds：是缓存总共存在多长时间。-->
+</ehcache>  

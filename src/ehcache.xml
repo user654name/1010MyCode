@@ -29,7 +29,7 @@
            timeToIdleSeconds="0"
            timeToLiveSeconds="36000"
            memoryStoreEvictionPolicy="LRU">
-        <searchable values="false" >
+        <searchable keys="false" >
             <searchAttribute name="color" type="java.lang.String"/>
             <searchAttribute name="name" type="java.lang.String"/>
         </searchable>

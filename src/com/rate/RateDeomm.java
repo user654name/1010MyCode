@@ -14,7 +14,7 @@ import java.util.Map;
 public class RateDeomm {
 
     public static void main(String[] args) {
-        int aim = 6300;
+        int aim = 6000;
         int playerScore = 5895;
         int win = 30;
         int lose = -28;
@@ -23,7 +23,7 @@ public class RateDeomm {
         System.out.println("rate = " + rate);
 
         Map<Integer, Integer> result = getMap();
-        for (int i = 0; i < 99999; i++) {
+        for (int i = 0; i < 1; i++) {
             Record record = finishAim(aim, playerScore, win, lose, rate);
             int times = record.getTimes();
             int win1 = record.getWin();
